@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistics and Supply Chain Management - Qafac</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+ 
+
+   
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <section class="service">
+      <h1>Logistics and Supply Chain Management</h1>
+      <p>Logistics and supply chain management involve the coordination and optimization of processes related to the transportation, storage, and distribution of petroleum products. This includes planning, procurement, inventory management, and tracking to ensure efficient and timely delivery to customers while minimizing costs and environmental impact.</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Qafac. All rights reserved.</p>
+  </footer>
+</body>
+</html>
