@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Control and Assurance - Qafac</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <section class="service">
+      <h1>Quality Control and Assurance</h1>
+      <p>Quality control and assurance involve ensuring that petroleum products meet regulatory standards and customer requirements. This includes rigorous testing, inspection, and monitoring at various stages of production, storage, and distribution to maintain product quality, safety, and reliability.</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Qafac. All rights reserved.</p>
+  </footer>
+</body>
+</html>
