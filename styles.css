@@ -1,0 +1,371 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for loading overlay */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FDFEFF; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Initial opacity */
+  transition: opacity 3s; /* Smooth fade effect */
+}
+
+.loading-logo {
+  width: 200px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+/* Styles for main content */
+#content {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Side panel */
+.side-panel {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #32CD32;
+  width: 20px;
+  height: 100vh;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+
+.side-panel:hover {
+  width: 150px;
+}
+
+.side-panel .arrow {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.side-panel:hover .arrow {
+  transform: translateX(130px) translateY(-50%);
+}
+
+.side-panel ul {
+  padding: 20px 10px; /* Add padding */
+  display: none;
+}
+
+.side-panel:hover ul {
+  display: block;
+}
+
+.side-panel ul li {
+  margin-bottom: 10px;
+}
+
+.side-panel ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.side-panel ul li a:hover {
+  background-color: #4682b4;
+}
+
+/* Adjustments for the content to avoid being overlapped by the side panel */
+.content {
+  margin-left: 20px; /* Adjust margin to account for the narrower panel */
+}
+
+.footer {
+  margin-left: 20px; /* Adjust margin to account for the narrower panel */
+}
+
+/* Global styles */
+/* Other styles... */
+
+/* Links */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Link color on hover */
+}
+
+/* Services page specific styles */
+.services ul {
+  list-style: none;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+}
+
+.services ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.services ul li a:hover {
+  background-color: #e2e6ea; /* Background color on hover */
+}
+
+
+/* Global styles */
+/* Other styles... */
+
+/* Services page specific styles */
+.services h1 {
+  font-size: 36px; /* Adjust font size */
+  font-weight: bold;
+  color: #333; /* Title color */
+  margin-bottom: 20px; /* Add some space below the title */
+  text-align: center; /* Center the title */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+}
+
+.services ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.services ul li a:hover {
+  background-color: #e2e6ea; /* Background color on hover */
+}
+
+/* Global styles */
+/* Other styles... */
+
+/* Services page specific styles */
+body {
+  background-color: #f2f2f2; /* Set a light gray background color */
+}
+
+.content {
+  background-color: #fff; /* Set a white background color for the content area */
+  padding: 20px;
+  border-radius: 10px; /* Add some rounded corners for a modern look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.services h1 {
+  /* Existing styles for the title */
+  /* Other styles... */
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+}
+
+.services ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.services ul li a:hover {
+  background-color: #e2e6ea; /* Background color on hover */
+}
+
+/* Global styles */
+/* Other styles... */
+
+/* Colors */
+:root {
+  --primary-color: #0056b3; /* Deep Blue */
+  --secondary-color: #66cc66; /* Green */
+  --accent-color: #cce0ff; /* Light Blue */
+  --background-color: #f2f2f2; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #003366; /* Darker Blue for links on hover */
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: #fff; /* White for header text */
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff; /* White for footer text */
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Content area */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services page specific styles */
+.services h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color); /* Deep Blue for title */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+}
+
+.services ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color); /* Light Blue for link background */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.services ul li a:hover {
+  background-color: #b3d9ff; /* Lighter Blue for link background on hover */
+}
+
+/* Additional styles using the green accent color */
+.services ul li a.green {
+  background-color: var(--secondary-color);
+  color: #fff; /* White text color */
+}
+
+.services ul li a.green:hover {
+  background-color: #4c944c; /* Darker Green for link background on hover */
+}
+
+/* Styles for the logo */
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+
+/* Styles for the logo */
+.logo {
+  position: absolute;
+  top: 2px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  width: 61px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 4px solid var(--secondary-color); /* Add a border with the secondary color */
+  border-radius: 50%; /* Make the border circular */
+  padding: 5px; /* Add padding to create space between the logo and the border */
+}
+
