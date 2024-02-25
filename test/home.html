@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Qafac</title>
+  <link rel="stylesheet" href="styles.css">
+
+<body>
+
+  <div id="loading-overlay">
+    <img src="logo.jpg" alt="Qafac Logo" class="loading-logo">
+  </div>
+
+  <div id="content" style="display: none;">
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="logo.jpg" alt="Qafac Logo" class="logo">
+        </a>
+      </nav>
+    </header>
+
+    <!-- Rest of your content here -->
+    <!-- Hero Section, Unique Design Section, Footer, etc. -->
+
+  </div>
+
+  <script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function() {
+      // Hide the loading overlay
+      document.getElementById("loading-overlay").style.opacity = "0";
+      // After a short delay, display the main content
+      setTimeout(function() {
+        document.getElementById("loading-overlay").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }, 1000); // Adjust the delay time as needed
+    });
+  </script>
+
+</body>
+  <style>
+    /* Additional CSS for graphical enhancements */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5; /* Light gray background */
+      color: #333; /* Dark gray text color */
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      padding: 0 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ff9900; /* Orange accent color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #fff; /* White text color */
+    }
+
+    .btn {
+      background-color: #007bff; /* Blue Button color */
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    footer {
+      background-color: #333; /* Dark gray footer background */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer ul li a:hover {
+      color: #ff9900; /* Orange accent color on hover */
+    }
+
+    .unique-design {
+      background-color: #ff9900; /* Orange accent color */
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .unique-design h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .unique-design p {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="logo.jpg" alt="Qafac Logo" class="logo">
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div>
+      <h1>Welcome to Qafac</h1>
+      <p style="color: #fff;">Your trusted partner in petroleum solutions</p> <!-- Updated color to white -->
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Unique Design Section -->
+  <section class="unique-design">
+    <h2>Discover Our Innovative Solutions</h2>
+    <p>At Qafac, we strive to deliver cutting-edge solutions tailored to meet your petroleum needs. Explore our services and experience excellence.</p>
+  </section>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Qafac. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
